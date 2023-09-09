@@ -1,6 +1,4 @@
-/* Estilos para pantallas de teléfono */
 @media (max-width: 767px) {
-  /* Aquí puedes definir estilos específicos para pantallas de teléfono */
   body {
     font-size: 16px;
   }
@@ -16,23 +14,15 @@
     height: auto;
   }
 
-  /* Ajusta el tamaño de la imagen del perfil */
-  .rounded-lg.w-48 {
-    /* Mantén el tamaño original de la imagen */
-  }
-
-  /* Centra el texto de habilidades y experiencia */
   .text-xl.text-gray-900.m-auto {
     text-align: center;
   }
 }
 @media (min-width: 768px) {
-  /* Aquí puedes definir estilos específicos para pantallas grandes */
   body {
     font-size: 20px;
   }
   
-
   table {
     margin-left: 15px;
     margin-top: 10px;
@@ -43,9 +33,8 @@
 
 }
 
-/* Estilos para pantallas grandes (mayores de 1200px) */
 @media (min-width: 1201px) {
-  /* Aquí puedes definir estilos específicos para pantallas grandes */
+
   body {
     font-size: 20px;
   }
@@ -57,6 +46,5 @@
     width: 100%;
     height: auto;
   }
-
 
 }
