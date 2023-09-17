@@ -39,3 +39,58 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+
+//DESHABILITADO TEMPORALMENTE
+
+/* function enviarDatos(event) {
+    event.preventDefault(); // Evitar el envío predeterminado del formulario
+  
+    // Obtener una referencia al formulario
+    var formulario = document.getElementById("miFormulario");
+  console.log("Formulario ",formulario)
+    // Obtener los datos del formulario
+    var formData = new FormData(formulario);
+  
+    console.log("Form DAt",formData)
+
+    var nombre = formData.get("nombre");
+var telefono = formData.get("telefono");
+var correo = formData.get("correo");
+var tema = formData.get("tema");
+var mensaje = formData.get("mensaje");
+
+var urlencoded = new URLSearchParams();
+urlencoded.append("nombre", nombre);
+urlencoded.append("telefono",  telefono);
+urlencoded.append("correo", correo);
+urlencoded.append("tema", tema);
+urlencoded.append("mensaje", mensaje)
+
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+
+var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: urlencoded,
+    redirect: 'follow'
+  };
+  
+    // Realizar una solicitud POST utilizando fetch
+    fetch("https://libardo06.github.io/API-SEND-Mail//enviar-correo", requestOptions)
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Error en la solicitud: " + response.status);
+        }
+        return response.json();
+      })
+      .then(function (data) {
+        // Manejar la respuesta de la solicitud fetch aquí
+        console.log(data);
+      })
+      .catch(function (error) {
+        // Manejar errores aquí
+        console.error(error);
+      });
+  } */
